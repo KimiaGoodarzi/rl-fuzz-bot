@@ -1,0 +1,31 @@
+name: RL-Fuzz-Bot CI
+
+on:
+  push:
+    paths:
+      - "rl_fuzz_bot/**"
+      - "tools/**"
+      - "tests/**"
+      - "Makefile"
+      - "app.py"
+      - "requirements.txt"
+  schedule:
+    - cron: "0 4 * * *" # daily at 04:00 UTC
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -e .[dev] stable-baselines3[extra] streamlit pandas altair
+
+      - name: Run full pipeline
+        run: make all
