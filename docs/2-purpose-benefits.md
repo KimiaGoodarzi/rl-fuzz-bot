@@ -16,11 +16,11 @@
 
 | Feature                   | What it does                                                       | Why it matters for Ford                             |
 | ------------------------- | ------------------------------------------------------------------ | --------------------------------------------------- |
-| **Hybrid fuzzing engine** | Combines random command sequences with a PPO-trained policy        | Covers common paths and hunts down deep bugs        |
+| **Hybrid fuzzing engine** | Combines random command sequences with a PPO-trained policy        | Covers common paths and finds down deep bugs        |
 | **Configurable latency**  | Models real CAN/LIN jitter via Gaussian noise                      | Exposes timing-sensitive faults before hardware     |
 | **Fault-prob injection**  | Randomly flips error flags to simulate electrical glitches         | Validates vehicle resilience under noisy conditions |
-| **Replayable logs**       | Saves every “killer” sequence plus seed/episode index              | Instant, deterministic bug reproduction             |
-| **Automatic test-export** | Generates standalone pytest files for each failure sequence        | Plug-and-play with Jenkins, GitHub Actions, etc.    |
+| **Replayable logs**       | Saves the killer sequences plus seed/episode index                 | Instant, deterministic bug reproduction             |
+| **Automatic test-export** | Generates pytest files for each failure sequence                   | Plugged with GitHub Actions                         |
 | **Streamlit dashboard**   | Interactive UI for metrics, sequence replay, and length histograms | Empowers engineers with visual insights             |
 | **Makefile & CI ready**   | One-line `make all` to train, evaluate, export, and test           | Zero-touch integration into nightly builds          |
 | **Extensible design**     | Swap in new environments, reward functions, or RL algorithms       | Future-proof testing as vehicle systems evolve      |
