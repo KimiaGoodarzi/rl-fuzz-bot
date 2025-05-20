@@ -2,13 +2,13 @@
 
 ## 2.1 How this helps Ford’s test automation
 
-At Ford, every software update is backed by automated tests. The RL Fuzz Bot slots into that pipeline as a _proactive_ failure detector:
+# At Ford, every software update is backed by automated tests. The RL Fuzz Bot slots into that pipeline as a _proactive_ failure detector:
 
-1. **Deeper coverage than scripted tests.** The RL Fuzz Bot generates _thousands_ of varied message sequences, some entirely unanticipated by engineers, and finds the ones that actually break the remote-start protocol.
+# 1. **Deeper coverage than scripted tests.** The RL Fuzz Bot generates _thousands_ of varied message sequences, some entirely unanticipated by engineers, and finds the ones that actually break the remote-start protocol.
 
-2. **Faster root-cause identification.** When a failure is found, the bot logs the exact sequence of commands and timing jitter that led to the fault. That record can be replayed line-by-line in a debugger or on hardware, which instantly gives a reproducible bug report.
+# 2. **Faster root-cause identification.** When a failure is found, the bot logs the exact sequence of commands and timing jitter that led to the fault. That record can be replayed line-by-line in a debugger or on hardware, which instantly gives a reproducible bug report.
 
-3. **Continuous adaptation.** As Ford’s protocol evolves (new commands, timing adjustments, firmware fixes), the RL agent can be retrained in minutes to learn the new failure patterns. This keeps test coverage in sync with every code change, without manually writing new test cases.
+# 3. **Continuous adaptation.** As Ford’s protocol evolves (new commands, timing adjustments, firmware fixes), the RL agent can be retrained in minutes to learn the new failure patterns. This keeps test coverage in sync with every code change, without manually writing new test cases.
 
 ---
 
