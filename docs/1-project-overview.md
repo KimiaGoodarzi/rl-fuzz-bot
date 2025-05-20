@@ -1,4 +1,4 @@
-# 1 Project Overview
+# 1. Project Overview
 
 > **Mission:** Find the rare timing and message-order faults in Ford’s remote-start protocol before they reach the road.
 

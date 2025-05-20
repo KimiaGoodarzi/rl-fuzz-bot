@@ -1,4 +1,4 @@
-# 3 High-Level Architecture
+# 3. High-Level Architecture
 
 - **3.1 Environment** (`RemoteStartEnv`)
 - **3.2 Random-Fuzzer vs. PPO Agent**

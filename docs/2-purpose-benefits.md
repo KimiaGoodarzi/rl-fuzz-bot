@@ -1,4 +1,4 @@
-# 2 Purpose & Benefits
+# 2. Purpose & Benefits
 
 ## 2.1 How this helps Ford’s test automation
 
