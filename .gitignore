@@ -11,8 +11,6 @@ env/
 fuzzbot/
 
 # Fuzzer & RL outputs
-my_failures.json
-ppo_failures.json
 models/
 tests/generated/
 
