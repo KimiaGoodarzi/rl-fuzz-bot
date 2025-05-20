@@ -1,4 +1,3 @@
-```markdown
 # 2 Purpose & Benefits
 
 ## 2.1 How this helps Ford’s test automation
@@ -25,4 +24,7 @@ At Ford, every software update is backed by automated tests. The RL Fuzz Bot slo
 | **Streamlit dashboard**   | Interactive UI for metrics, sequence replay, and length histograms | Empowers engineers with visual insights             |
 | **Makefile & CI ready**   | One-line `make all` to train, evaluate, export, and test           | Zero-touch integration into nightly builds          |
 | **Extensible design**     | Swap in new environments, reward functions, or RL algorithms       | Future-proof testing as vehicle systems evolve      |
+
+```
+
 ```
