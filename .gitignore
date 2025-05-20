@@ -1,1 +1,24 @@
 .venv/\n__pycache__/\n*.egg-info/
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+
+# Virtual envs
+.venv/
+env/
+fuzzbot/
+
+# Fuzzer & RL outputs
+my_failures.json
+ppo_failures.json
+models/
+tests/generated/
+
+# Streamlit cache
+.streamlit/
+
+# Misc
+.DS_Store
+
